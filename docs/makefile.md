@@ -32,7 +32,7 @@ And rebuild the PHP image.
 
 ## The template
 
-```Makefile
+```makefile
 # Executables (local)
 DOCKER_COMP = docker compose
 

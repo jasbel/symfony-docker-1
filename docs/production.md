@@ -68,11 +68,11 @@ docker compose -f compose.yaml -f compose.prod.yaml up -d --wait
 
 Be sure to replace `your-domain-name.example.com` with your actual domain name and to set the values of `APP_SECRET`, `CADDY_MERCURE_JWT_SECRET` to cryptographically secure random values.
 
-Your server is up and running, and a HTTPS certificate has been automatically generated for you.
-Go to `https://your-domain-name.example.com` and enjoy!
-
 > [!NOTE]
 > The worker mode of FrankenPHP is enabled by default in prod. To disable it, add the env var FRANKENPHP_CONFIG as empty to the compose.prod.yaml file.
+
+Your server is up and running, and a HTTPS certificate has been automatically generated for you.
+Go to `https://your-domain-name.example.com` and enjoy!
 
 > [!CAUTION]
 > Docker can have a cache layer, make sure you have the right build for each deployment or rebuild your project with --no-cache option to avoid cache issue.
